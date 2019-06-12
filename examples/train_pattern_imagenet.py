@@ -167,7 +167,7 @@ if __name__ == "__main__":
 
     def image(X):
         X = X.copy()
-        return ivis.project(X, absmax=255.0, input_is_postive_only=True)
+        return ivis.project(X, absmax=255.0, input_is_positive_only=True)
 
     def bk_proj(X):
         return ivis.project(X)
@@ -176,7 +176,7 @@ if __name__ == "__main__":
         return ivis.heatmap(X)
 
     def graymap(X):
-        return ivis.graymap(np.abs(X), input_is_postive_only=True)
+        return ivis.graymap(np.abs(X), input_is_positive_only=True)
 
     ###########################################################################
     # Analysis.

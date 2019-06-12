@@ -306,9 +306,9 @@ class Clip(_Map):
 
 class Project(_Map):
 
-    def __init__(self, output_range=False, input_is_postive_only=False):
+    def __init__(self, output_range=False, input_is_positive_only=False):
         self._output_range = output_range
-        self._input_is_positive_only = input_is_postive_only
+        self._input_is_positive_only = input_is_positive_only
         return super(Project, self).__init__()
 
     def _apply_map(self, x):
